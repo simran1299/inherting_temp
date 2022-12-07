@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>parent</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+    <center>
+   <!-- {% block body_block  %}
+    <h1>this is parent html page</h1>
+    {% endblock %} -->
+    <h1 class="btn btn-danger">This is  Parent Button</h1>
+
+    {% block body_block  %}
+   
+    {% endblock %}
+
+    </center>
+
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+
+</body>
+</html>
